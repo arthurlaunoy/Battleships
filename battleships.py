@@ -76,4 +76,4 @@ def main():
         # check if game is over
         # if game is not over, switch player turn if the current user played in the water
         # if game is over, get out of loop
-    # call after-game function for stats and possibility to play again
+    # call after-game function for stats and possibility to play again ʕ•́ᴥ•̀ʔっ
