@@ -1,4 +1,5 @@
 from MyBoard import Board
+from MyCoords import Coords
 import random
 
 def drawBoards(board1: Board, board2: Board):
@@ -9,7 +10,7 @@ def drawBoards(board1: Board, board2: Board):
             board2 -> second board, drawn on the right of the terminal, representing the the opponent's board.
     """
 
-def checkUserInputCoordinates(coords: str) -> bool:
+def checkUserInputCoordinates(coords: Coords) -> bool:
     """
     Checks if the coordinates the input by the user are in the grid.
 
@@ -18,7 +19,7 @@ def checkUserInputCoordinates(coords: str) -> bool:
     return: bool -> True if coords are correct and False otherwise.
     """
 
-def checkStateOfSquare(coords: str) -> int:
+def checkStateOfSquare(coords: Coords) -> int:
     """
     Return the state of the square guessed by the player.
 
@@ -30,11 +31,12 @@ def checkStateOfSquare(coords: str) -> int:
                         -> 3 if it is a ship already guessed
     """
 
-def isGameOver(fleet: list) -> int:
+def isGameOver(board1: Board, board2: Board) -> int:
     """
     Checks if the game is over.
 
-    param: list -> list of list of coordinates representing the fleet of boats that are still alive for each player.
+    param: board1 -> board of player 1.
+           board2 -> board of player 2.
 
     return: int -> a number representing the state of the whole game ->
                         -> 1 if the game is not over.
