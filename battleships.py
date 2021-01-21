@@ -63,6 +63,8 @@ def coinflip(stand: str) -> int:
         return 2
 
 # TODO: function at end of game -> nb of turns and/or play again ? for example
+# TODO: function that finds a ship from a given Coord
+# TODO: user prompt for ships placement
 
 def main():
     # Welcome text
